@@ -134,7 +134,7 @@ class Utility(commands.Cog):
         )
         
         embed.add_field(
-            name=f"{config.get_emoji('staff')} Staff",
+            name=f"{config.get_emoji('staff')} Staff Management",
             value="`/staff_add` - Add staff member\n"
                   "`/staff_list` - List staff\n"
                   "`/staff_info` - Staff info",
@@ -142,10 +142,27 @@ class Utility(commands.Cog):
         )
         
         embed.add_field(
+            name=f"{config.get_emoji('alert')} Staff Tasks",
+            value="`/task_assign` - Assign task to staff\n"
+                  "`/my_tasks` - View your tasks\n"
+                  "`/task_complete` - Mark task complete\n"
+                  "`/all_tasks` - View all tasks",
+            inline=False
+        )
+        
+        embed.add_field(
+            name=f"{config.get_emoji('alert')} Reminders",
+            value="`/remind` - Set a reminder\n"
+                  "`/reminders` - View reminders\n"
+                  "`/delete_reminder` - Delete reminder",
+            inline=False
+        )
+        
+        embed.add_field(
             name=f"{config.get_emoji('alert')} Sticky Messages",
             value="`/sticky_set` - Set sticky message\n"
-                  "`/sticky_remove` - Remove sticky message\n"
-                  "`/sticky_view` - View sticky message\n"
+                  "`/sticky_remove` - Remove sticky\n"
+                  "`/sticky_view` - View sticky\n"
                   "`/sticky_toggle` - Toggle sticky",
             inline=False
         )
